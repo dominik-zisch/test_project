@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     running = True
     while (running):
-        print( "FUCK YOU 222!" )
+        print( "Hello, World!" )
         time.sleep(1)
 
     print( 'Closing program!' )
