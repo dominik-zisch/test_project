@@ -9,4 +9,5 @@ if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date"
 else
     echo "Need to pull"
+    git pull origin master
 fi
