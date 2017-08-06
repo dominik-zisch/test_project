@@ -11,3 +11,5 @@ else
     echo "Need to pull"
     git pull origin master
 fi
+
+echo "done"
