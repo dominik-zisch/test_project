@@ -2,9 +2,14 @@
 
 ##### Functions
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#DIR="$(pwd | sed 's/ /\\ /g')"
+echo $DIR
+
 function startNative
 {
-    python /home/dominik/Dropbox/programming/00\ NEW/01_bash/auto_update/test_project/python_test.py $(tty)
+    #python /home/dominik/Dropbox/programming/00\ NEW/01_bash/auto_update/test_project/python_test.py $(tty)
+    python $DIR/python_test.py $(tty)
 }
 
 ##### Main
