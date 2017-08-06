@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NATIVE_APP='python_test'
+NATIVE_APP=$1
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

@@ -6,6 +6,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ##### Main
 
-sh $SCRIPT_DIR/start_native.sh &
+sh $SCRIPT_DIR/start_native.sh $NATIVE_APP &
 sleep 10
-sh $SCRIPT_DIR/check_for_updates.sh &
+sh $SCRIPT_DIR/check_for_updates.sh $NATIVE_APP &

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+NATIVE_APP=$1
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -15,7 +16,7 @@ while true; do
         echo "Up-to-date"
     else
         echo "Need to pull"
-        sh $SCRIPT_DIR/kill_native.sh
+        sh $SCRIPT_DIR/kill_native.sh $NATIVE_APP
     fi
     echo "-----------------------------------"
     read -t 10 -p "Restarting the update app in 10 seconds. Press <CTRL>+c to stop."
