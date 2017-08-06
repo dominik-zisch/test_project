@@ -3,8 +3,6 @@
 ##### Functions
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-#DIR="$(pwd | sed 's/ /\\ /g')"
-echo $DIR
 
 function startNative
 {
