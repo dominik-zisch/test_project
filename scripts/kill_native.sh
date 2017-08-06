@@ -9,4 +9,3 @@ function kill_process () {
 echo "Killing native app!"
 
 kill_process $NATIVE_APP
-kill_process 'start_native'

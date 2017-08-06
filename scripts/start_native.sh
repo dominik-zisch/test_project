@@ -1,22 +1,18 @@
 #!/bin/bash
 
 NATIVE_APP='python_test'
-
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-function startNative
-{
-    #python /home/dominik/Dropbox/programming/00\ NEW/01_bash/auto_update/test_project/python_test.py $(tty)
-    python $DIR/../$NATIVE_APP.py
-}
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ##### Main
 
 while true; do
 
+    echo "Checking for updates"
+    sh $SCRIPT_DIR/update_native.sh
     echo "Restarting native app!"
-    startNative
-    echo "Main app ended... restarting..."
+    python $ROOT_DIR/$NATIVE_APP.py
+    echo "Main app ended..."
     echo "-----------------------------------"
     read -t 2 -p "Restarting the native app in 2 seconds. Press <CTRL>+c to stop."
     echo "-----------------------------------"
