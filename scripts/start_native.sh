@@ -9,7 +9,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 while true; do
 
     echo "Checking for updates"
-    sh $SCRIPT_DIR/update_native.sh
+    sh $SCRIPT_DIR/pull_git_native.sh
     echo "Restarting native app!"
     python $ROOT_DIR/$NATIVE_APP.py
     echo "Main app ended..."
