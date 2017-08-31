@@ -28,7 +28,7 @@ echo ""
 
 git -C $ROOT_DIR add .
 git -C $ROOT_DIR commit -m $COMMIT_MSG
-
+echo ""
 
 ########################################
 ## Push git repo #######################
@@ -39,7 +39,7 @@ echo "## Pushing git repo to origin                             ##"
 echo ""
 
 git -C $ROOT_DIR push origin master
-
+echo ""
 
 echo ""
 echo "############################################################"
