@@ -78,7 +78,7 @@ if __name__ == '__main__':
     # main program loop
     running = True
     while ( running ):
-        print( "First test..." )
+        print( "Second test..." )
         if ( not q.empty() ):
             topic, msg = q.get()
             print( topic + " " + str(msg) )
