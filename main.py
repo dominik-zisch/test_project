@@ -87,5 +87,5 @@ if __name__ == '__main__':
 
     # cleanup
     mqtt_client.stop()
-    log_info( 'Closing program!' )
+    print( 'Closing program!' )
     sys.exit(0)
