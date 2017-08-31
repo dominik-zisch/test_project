@@ -17,3 +17,9 @@ echo "## Pulling git repo from origin                           ##"
 echo ""
 
 git -C $ROOT_DIR pull origin master
+
+
+echo ""
+echo "############################################################"
+echo "## Done                                                   ##"
+echo ""
