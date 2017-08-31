@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 ############################################################
@@ -16,13 +16,16 @@ fi
 
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+IP=$(ip route get 8.8.8.8 | awk '/8.8.8.8/ {print $NF}')
+IP_ARR=(${IP//./ })
+ID=${IP_ARR[3]}
 
 
 ############################################################
 ##  Stop native app  #######################################
 
 function stop_native_app {
-    mosquitto_pub -t 'parken/rpi/1/quit' -m 0
+    mosquitto_pub -t "parken/rpi/$ID/quit" -m 0
 }
 
 

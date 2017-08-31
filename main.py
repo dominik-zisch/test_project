@@ -72,7 +72,7 @@ if __name__ == '__main__':
     mqtt_client.start()
 
     mqtt_client.subscribe( "test" )
-    mqtt_client.subscribe( "quit" )
+    mqtt_client.subscribe( "parken/rpi/12/quit" )
     mqtt_client.publish_message( "test", "Test no 2" )
 
     # main program loop
