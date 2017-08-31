@@ -39,3 +39,9 @@ echo "## Pushing git repo to origin                             ##"
 echo ""
 
 git -C $ROOT_DIR push origin master
+
+
+echo ""
+echo "############################################################"
+echo "## Done                                                   ##"
+echo ""
