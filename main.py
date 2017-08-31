@@ -82,7 +82,7 @@ if __name__ == '__main__':
         if ( not q.empty() ):
             topic, msg = q.get()
             print( topic + " " + str(msg) )
-            if (topic == "quit"):
+            if (topic == "parken/rpi/12/quit"):
                 running = False
         time.sleep( 0.1 )
 
